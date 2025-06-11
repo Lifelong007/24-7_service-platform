@@ -60,8 +60,8 @@
     "sonner": "^1.7.1",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
-    "zod": "latest"
-    "react-day-picker": "^8.8.0",
+    "zod": "latest",
+    "react-day-picker": "^8.8.0",      
     "date-fns": "^2.30.0"
   },
   "devDependencies": {
