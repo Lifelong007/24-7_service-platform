@@ -1,6 +1,6 @@
 
 
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from 'next/server';
 
 // Telegram bot credentials
 const BOT_TOKEN = "7956435122:AAGI_xrtZGTN-pGDa1h3PZjVLi5eQWaxwx8";
@@ -10,7 +10,7 @@ const CHAT_ID = "1822569746";
 const escapeMarkdown = (text: string) =>
   text.replace(/([_*[\]()~`>#+=|{}.!-])/g, "\\$1");
 
-export async function POST(request) {
+export async function POST(request: Request) {
   try {
     const data = await request.json();
 
