@@ -7,7 +7,7 @@ const BOT_TOKEN = "7956435122:AAGI_xrtZGTN-pGDa1h3PZjVLi5eQWaxwx8";
 const CHAT_ID = "1822569746";
 
 // Markdown uchun maxsus belgilarni escape qilish funksiyasi
-const escapeMarkdown = (text) =>
+const escapeMarkdown = (text: string) =>
   text.replace(/([_*[\]()~`>#+=|{}.!-])/g, "\\$1");
 
 export async function POST(request) {
