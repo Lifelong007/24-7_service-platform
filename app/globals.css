@@ -1,5 +1,6 @@
+
 @tailwind base;
-@tailwind components;
+/* @tailwind components; */
 @tailwind utilities;
 
 @layer base {
@@ -119,4 +120,4 @@
       transform: translateY(0);
     }
   }
-}
+} 
