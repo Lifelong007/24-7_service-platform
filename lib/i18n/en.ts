@@ -83,7 +83,7 @@ export const en = {
   // Contact Section
   needHelp: "Need Help?",
   supportTeam: "Our support team is available 24/7 to assist you with any questions.",
-  contactUs: "Contact Us",
+  // contactUs: "Contact Us",
 
   // Footer
   allRightsReserved: "All rights reserved",

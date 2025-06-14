@@ -3,11 +3,11 @@
 import { NextResponse } from "next/server";
 
 // Telegram bot credentials
-const BOT_TOKEN = "7956435122:AAGI_xrtZGTN-pGDa1h3PZjVLi5eQWaxwx8";
-const CHAT_ID = "1822569746";
+const BOT_TOKEN = process.env.BOT_TOKEN;
+const CHAT_ID = process.env.CHAT_ID;
 
 // Markdown uchun maxsus belgilarni escape qilish funksiyasi
-const escapeMarkdown = (text) =>
+const escapeMarkdown = (text: string) =>
   text.replace(/([_*[\]()~`>#+=|{}.!-])/g, "\\$1");
 
 export async function POST(request) {
