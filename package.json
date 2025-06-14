@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "lint": "next lint",
-    "start": "next start",
+    "start": "node server.js",
     "export": "next export",
     "netlify": "next build && next export"
   },

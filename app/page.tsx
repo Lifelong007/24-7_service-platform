@@ -53,16 +53,16 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden pt-16">
-<div
-  className="absolute inset-0 bg-gradient-to-r from-primary/90 to-secondary/70 mix-blend-multiply"
-  style={{
-    backgroundImage: "url('/images/backround.jpg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center center", // yoki "50% 50%"
-    backgroundRepeat: "no-repeat",
-    minHeight: "100vh",
-  }}
-/>
+        <div
+          className="absolute inset-0 bg-gradient-to-r from-primary/90 to-secondary/70 mix-blend-multiply"
+          style={{
+            backgroundImage: "url('/images/backround.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center center", // yoki "50% 50%"
+            backgroundRepeat: "no-repeat",
+            minHeight: "100vh",
+          }}
+        />
 
         <div className="container relative z-10 mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-black-200 mb-6 animate-fade-in">{t("heroTitle")}</h1>
