@@ -3,8 +3,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 // Telegram bot credentials
-const BOT_TOKEN = process.env.BOT_TOKEN;
-const CHAT_ID = process.env.CHAT_ID;
+const BOT_TOKEN = "7956435122:AAGI_xrtZGTN-pGDa1h3PZjVLi5eQWaxwx8";
+const CHAT_ID = "1822569746";
 
 // Markdown uchun maxsus belgilarni escape qilish funksiyasi
 const escapeMarkdown = (text: string) =>
@@ -73,15 +73,6 @@ ${escapeMarkdown(data.additionalInfo || "None provided")}
         text: message,
         parse_mode: "Markdown",
       }),
-      // body: JSON.stringify({
-      //   name: 'Ali',
-      //   phone: '+998901234567',
-      //   address: 'Toshkent',
-      //   serviceName: 'Ta’mirlash',
-      //   serviceTime: '12:00',
-      //   additionalInfo: 'Tezroq',
-      //   location: '(41.3111, 69.2797)',
-      // }),
     });
 
     const telegramData = await telegramResponse.json();
@@ -95,6 +86,7 @@ ${escapeMarkdown(data.additionalInfo || "None provided")}
     }
 
     return NextResponse.json({ success: true });
+
   } catch (error) {
     console.error("Error sending to Telegram:", error);
     return NextResponse.json(
