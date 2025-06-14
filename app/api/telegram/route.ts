@@ -68,20 +68,20 @@ ${escapeMarkdown(data.additionalInfo || "None provided")}
       headers: {
         "Content-Type": "application/json",
       },
-      // body: JSON.stringify({
-      //   chat_id: CHAT_ID,
-      //   text: message,
-      //   parse_mode: "Markdown",
-      // }),
       body: JSON.stringify({
-        name: 'Ali',
-        phone: '+998901234567',
-        address: 'Toshkent',
-        serviceName: 'Ta’mirlash',
-        serviceTime: '12:00',
-        additionalInfo: 'Tezroq',
-        location: '(41.3111, 69.2797)',
+        chat_id: CHAT_ID,
+        text: message,
+        parse_mode: "Markdown",
       }),
+      // body: JSON.stringify({
+      //   name: 'Ali',
+      //   phone: '+998901234567',
+      //   address: 'Toshkent',
+      //   serviceName: 'Ta’mirlash',
+      //   serviceTime: '12:00',
+      //   additionalInfo: 'Tezroq',
+      //   location: '(41.3111, 69.2797)',
+      // }),
     });
 
     const telegramData = await telegramResponse.json();
