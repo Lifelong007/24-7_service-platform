@@ -98,3 +98,4 @@ export const en = {
   locationAccessDenied: "Location access was denied. Please enter your address manually.",
   locationError: "Error getting location. Please enter your address manually.",
 }
+
