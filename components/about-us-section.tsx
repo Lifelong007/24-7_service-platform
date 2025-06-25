@@ -52,7 +52,7 @@ export default function AboutUsSection() {
           </motion.p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-12">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -76,7 +76,7 @@ export default function AboutUsSection() {
             <p className="mb-6">{t("missionDescription")}</p>
 
             <h3 className="text-2xl font-semibold mb-4">{t("ourValues")}</h3>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="gridgrid-cols-1 sm:grid-cols-2 gap-4">
               {values.map((value, index) => (
                 <motion.div
                   key={index}
